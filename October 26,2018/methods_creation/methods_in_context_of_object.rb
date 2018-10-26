@@ -27,3 +27,11 @@ class Object
   attr_writer :instance_variable
   attr_reader :instance_variable
 end
+
+class Example
+  def method_missing(name, *args)
+    puts "#{name} called with #{args.size} arguments: #{args.join(' ')}"
+  end
+end
+
+Example.new.random_method(11, "hello", Object.new)
