@@ -1,0 +1,5 @@
+{
+  "name": "event_store_app",
+  "private": true,
+  "dependencies": {}
+}
