@@ -21,3 +21,29 @@ p arr[1...4]
 p arr[1..4]
 
 p arr.at(5)
+p arr.at(-5)
+p arr.at(101) # nil
+
+p arr.fetch(3)
+p arr.fetch(-3)
+# p arr.fetch(100) # error
+p arr.fetch(100, "outside")
+
+p arr.first
+p arr.last
+
+p arr.take(3)
+p arr
+
+p arr.drop(3)
+p arr
+
+# information about an Array
+
+p arr.length
+p arr.size
+p arr.count
+
+p arr.empty?
+
+p arr.include?(9)
