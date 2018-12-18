@@ -47,3 +47,45 @@ p arr.count
 p arr.empty?
 
 p arr.include?(9)
+
+# Adding items
+
+arr.push(67)
+arr << 71
+p arr
+
+arr.unshift(91)
+p arr
+
+arr.insert(7, 44)
+p arr
+
+arr.insert(3, 38, 45)
+p arr
+
+# Removing items
+
+p arr.pop
+p arr
+
+p arr.shift
+p arr
+
+p arr.delete_at(2)
+p arr
+
+arr << 67
+p arr.delete(67)
+p arr
+
+arr << nil
+p arr.compact
+p arr
+p arr.compact!
+p arr
+
+arr += arr
+p arr
+p arr.uniq
+p arr
+p arr.uniq!
