@@ -89,3 +89,32 @@ p arr
 p arr.uniq
 p arr
 p arr.uniq!
+
+# Iterating arrays
+
+arr.each { |el| print el *=10, " " }
+
+words = %w(iterate over the elements in the arrays in reverse order)
+words.reverse_each { |w| p w.reverse }
+
+arr.map { |el| el*3 }
+p arr
+
+arr2 = (1..7).to_a
+p arr2
+arr2.map! { |el| el*3 }
+p arr2
+
+p "non-destructive selection"
+p arr
+p arr.select { |el| el > 5 }
+p arr.reject { |el| el < 5 }
+p arr.drop_while { |el| el < 7 }
+p arr
+
+p "destructive selection"
+p arr
+p arr.delete_if { |el| el < 5 }
+p arr
+p arr.keep_if { |el| el > 10 }
+p arr
